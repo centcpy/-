@@ -2,3 +2,141 @@
     margin: 0;
     padding: 0;
 }
+
+/* -------------title_play-------------- */
+.title_play {
+    width: 75%;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.title_play h1 {
+    font-size: 40px;
+    padding: 30px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.play_nav {
+    width: 100%;
+    height: 58px;
+    text-align: center;
+}
+
+.play_nav a {
+    color: #aaa;
+    display: inline-block;
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.play_nav .on {
+    color: #ea6c23;
+    border-bottom: 4px solid #ea6c23;
+    padding-bottom: 14px;
+}
+
+/* --------------section--------------- */
+section {
+    width: 100%;
+    height: 3200px;
+    background-color: #f1f1f1;
+}
+
+.content {
+    width: 75%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.con {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid #ececec;
+}
+
+.con .live_nav {
+    height: 70px;
+}
+
+.con .live_nav span {
+    width: 6px;
+    height: 25px;
+    background-color: #FF4229;
+    margin-top: 20px;
+}
+
+.con .live_nav p {
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 70px;
+}
+
+.con .pic {
+    height: 180px;
+    box-sizing: border-box;
+    padding: 0px 20px 20px;
+    border-bottom: 1px dashed #ececec;
+}
+
+.con .product {
+    height: 75px;
+    box-sizing: border-box;
+    padding: 0px 20px 35px;
+}
+
+.con a:hover {
+    color: #ea6c23;
+}
+
+/* -------生活--------- */
+.live .pic {
+    height: 335px;
+    box-sizing: border-box;
+    padding: 0px 20px 20px;
+    border-bottom: 1px dashed #ececec;
+}
+
+.pic li {
+    width: 160px;
+    height: 140px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.pic li a {
+    color: #aaa;
+}
+
+.pic li a p {
+    padding-top: 15px;
+}
+
+.live .product {
+    height: 155px;
+    box-sizing: border-box;
+    padding: 0px 20px 35px;
+}
+
+.product li {
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.product li a {
+    color: #aaa;
+}

@@ -2,3 +2,148 @@
     margin: 0;
     padding: 0;
 }
+
+/* -------------title_play-------------- */
+.title_play {
+    width: 75%;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.title_play h1 {
+    font-size: 40px;
+    padding: 30px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.play_nav {
+    width: 100%;
+    height: 58px;
+    text-align: center;
+}
+
+.play_nav a {
+    color: #aaa;
+    display: inline-block;
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.play_nav .on {
+    color: #ea6c23;
+    border-bottom: 4px solid #ea6c23;
+    padding-bottom: 14px;
+}
+
+/* --------------section--------------- */
+section {
+    width: 100%;
+    min-height: 1100px;
+    background: #f1f1f1;
+}
+
+.content {
+    width: 75%;
+    min-height: 1100px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.content ul {
+    min-height: 1060px;
+    padding-bottom: 20px;
+}
+
+.content ul li {
+    width: 220px;
+    height: 225px;
+    margin: 0px 50px 40px 24px;
+    float: left;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+.content ul li:hover img {
+    animation: go infinite 1.2s;
+}
+
+@keyframes go {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.content ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #444;
+}
+
+.content ul li a img {
+    width: 220px;
+    height: 130px;
+    border-radius: 10px 10px 0 0;
+}
+
+.content .info {
+    height: 100px;
+    padding: 7px 10px 10px 10px;
+    background: url(../../img/listbg.jpg)no-repeat 0px 85px;
+    background-size: 221px 20px;
+}
+
+.content .info .name {
+    font-size: 14px;
+    height: 45px;
+}
+
+.content .info .info_cont {
+    height: 20px;
+    padding: 10px 0;
+}
+
+.content .info .info_cont .icon {
+    color: #aaa;
+}
+
+.content .info .info_cont .icon span {
+    font-size: 12px;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
+.content .info .info_cont .icon .xin {
+    background: url(../../img/xin.png)no-repeat 0px center;
+}
+
+.content .info .info_cont .icon .look {
+    background: url(../../img/reply.png)no-repeat 0px center;
+}
+
+.load {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.load .more {
+    color: #ea4e23;
+    padding-left: 24px;
+    background: url(../../img/more.png)no-repeat 0px center;
+}
