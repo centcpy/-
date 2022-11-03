@@ -2,3 +2,339 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* -----------------header------------------- */
+header {
+    width: 100%;
+    height: 77px;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+}
+
+.head {
+    width: 75%;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.head_log {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.head_log img {
+    width: 132px;
+}
+
+.nav {
+    padding-top: 28px;
+    padding-left: 40px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.nav li {
+    float: left;
+    padding: 0 35px;
+    height: 32px;
+}
+
+.nav li a {
+    font-size: 20px;
+    color: black;
+}
+
+.nav .on a {
+    color: #ea6c23;
+}
+
+.nav li a:hover {
+    color: #ea6c23;
+}
+
+.head_r {
+    color: #ea6c23;
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px #ea6c23 solid;
+}
+
+.head_r:hover {
+    background-color: #ea6c23;
+    color: #fff;
+}
+
+.search {
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    margin-right: 25px;
+    line-height: 666px;
+    background: url(../img/search.png)no-repeat;
+}
+
+.search:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------footer----------------- */
+footer {
+    width: 100%;
+    height: 360px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #555;
+    color: #aaa;
+}
+
+.foot {
+    width: 75%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.foot_text {
+    width: 100%;
+    height: 210px;
+}
+
+.fo_1 {
+    overflow: hidden;
+}
+
+.fo_1 img {
+    width: 160px;
+    height: 160px;
+}
+
+.fo_2 {
+    width: 140px;
+    padding-left: 35px;
+    font-size: 13px;
+}
+
+.fo_2 img {
+    margin-bottom: 20px;
+}
+
+.fo_2 p {
+    margin-bottom: 15px;
+}
+
+.fo_3 {
+    width: 100px;
+    padding-left: 35px;
+}
+
+.fo_3 h4 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.fo_3 a {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.fo_4 {
+    width: 140px;
+    padding-left: 35px;
+}
+
+.fo_4 h4 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.fo_4 p {
+    height: 20px;
+}
+
+.fo_4 span {
+    float: left;
+    width: 70px;
+    height: 20px;
+}
+
+.fo_4 a {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.fo_5 {
+    width: 150px;
+    padding-left: 35px;
+}
+
+.fo_5 h4 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.fo_5 a {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.fo_6 {
+    width: 180px;
+    padding-left: 35px;
+}
+
+.fo_6 h4 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.fo_6 a {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.end {
+    padding-top: 80px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* 注册页面 */
+.report-box {
+    background: #f7f7f7;
+    padding-bottom: 35px;
+    padding-top: 25px;
+    overflow: hidden;
+}
+
+.wrap {
+    background: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px #d7d7d7 solid;
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.wrap h2 {
+    position: relative;
+    padding: 20px 0 20px 25px;
+    font-size: 20px;
+    color: #474747;
+}
+
+.wrap h2::after {
+    background: #fe5341;
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 26px;
+    left: 0;
+    top: 24px;
+}
+
+.regForm {
+    width: 500px;
+    margin: 50px auto 150px;
+}
+
+.regForm p {
+    width: 400px;
+    margin-top: 28px;
+    position: relative;
+}
+
+.regForm span {
+    font-size: 12px;
+}
+
+.regForm input {
+    background: #f7f7f7;
+    color: #a3a3a3;
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px #eee solid;
+    border-radius: 10px;
+}
+
+.regForm p:nth-of-type(2) input,
+.regForm p:nth-of-type(3) {
+    width: 245px;
+}
+
+.regForm p:nth-of-type(2) img {
+    width: 132px;
+    height: 35px;
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+}
+
+.getCode {
+    display: block;
+    box-sizing: border-box;
+    width: 132px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px #a3a3a3 solid;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: -145px;
+    color: #a3a3a3;
+}
+
+#submit {
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #fe5341;
+    color: #fff;
+}
