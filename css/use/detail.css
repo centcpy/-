@@ -2,3 +2,324 @@
     margin: 0;
     padding: 0;
 }
+
+.focus {
+    height: 300px;
+    overflow: hidden;
+    background: url(../../img/original.jpg) no-repeat center top;
+}
+
+.focus-box {
+    text-align: right;
+    width: 1000px;
+    min-width: 1000px;
+    margin: 40px auto;
+
+}
+
+.focus-box h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    font-family: "Microsoft YaHei", SimHei, "微软雅黑", "黑体";
+    font-weight: 400;
+    color: #555;
+}
+
+.focus-box span {
+    background: rgba(255, 255, 255, .3);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.time {
+    padding: 25px 0 16px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn a {
+    width: 242px;
+    height: 48px;
+    text-align: center;
+    display: inline-block;
+    line-height: 48px;
+    font-size: 24px;
+    border-radius: 3px;
+    background: #fe5341;
+    color: #fff;
+    margin-top: 15px;
+}
+
+/* 当前页面通用 */
+.red {
+    color: #ff0000;
+}
+
+.blue {
+    color: #0070c0;
+}
+
+/*  产品详情页版心样式  */
+section {
+    width: 100%;
+    height: 100px;
+}
+
+section .flow {
+    height: 62px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section .flow div {
+    float: left;
+    margin-top: 20px;
+    height: 62px;
+    line-height: 31px;
+    width: 43px;
+    padding-left: 11px;
+    font-size: 20px;
+    border-left: 6px solid #fe5341;
+}
+
+section .flow ul li {
+    margin: 20px 65px;
+    float: left;
+    height: 62px;
+    width: 55px;
+    cursor: pointer;
+    font-size: 13px;
+    padding-top: 41px;
+    box-sizing: border-box;
+}
+
+section .flow ul li a {
+    color: #a3a3a3;
+}
+
+section .flow ul li:nth-of-type(1) {
+    background: url(../../img/use1.png) no-repeat 10px 0;
+    border-bottom: 2px solid #fe5341;
+}
+
+section .flow ul li:nth-of-type(2) {
+    background: url(../../img/use2.png) no-repeat 10px 0;
+}
+
+section .flow ul li:nth-of-type(3) {
+    background: url(../../img/use3.png) no-repeat 10px 0;
+}
+
+section .flow ul li:nth-of-type(4) {
+    background: url(../../img/use4.png) no-repeat 10px 0;
+}
+
+section .flow ul li:nth-of-type(5) {
+    background: url(../../img/use5.png) no-repeat 10px 0;
+}
+
+section .flow ul li:hover {
+    border-bottom: 2px solid #fe5341;
+}
+
+/* < !-- 中间内容 --> */
+.content {
+    width: 1000px;
+    margin: 20px auto;
+    height: auto;
+    overflow: hidden;
+    /* < !-- 产品介绍 （版心左边） --> */
+    /* < !-- 产品介绍 （版心右边） --> */
+    /*   < !-- 热门试用 （版心下边） --> */
+}
+
+.content .content_left {
+    width: 700px;
+    float: left;
+    background-color: #ffffff;
+}
+
+.content .content_left .product,
+.content .content_left .activity {
+    padding-left: 11px;
+    border-left: 6px solid #fe5341;
+}
+
+.content .content_left .product h2,
+.content .content_left .activity h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content .content_left .fengsha {
+    color: #0177a7;
+}
+
+.content .content_right {
+    width: 270px;
+    height: 1000px;
+    float: right;
+}
+
+.content .content_right .money {
+    font-size: 40px;
+    color: #fe5341;
+}
+
+.content .content_right button {
+    width: 100%;
+    height: 48px;
+    background-color: #fe5341;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content .content_right p {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.content .content_right .juzhong {
+    text-align: center;
+}
+
+.content .content_right .channel,
+.content .content_right .experience,
+.content .content_right .guanzhu {
+    padding-left: 11px;
+    border-left: 6px solid #fe5341;
+}
+
+.content .content_right .channel h2,
+.content .content_right .experience h2,
+.content .content_right .guanzhu h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content .hot_shiyong {
+    float: left;
+    width: 1000px;
+}
+
+.content .hot_shiyong .hot_shiyong_top {
+    position: relative;
+    padding: 18px 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content .hot_shiyong .hot_shiyong_top a {
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    padding-right: 17px;
+    font-size: 14px;
+    float: right;
+    background: url(../img/icon/readMore.png) no-repeat 60px 5px;
+    color: #fd6959;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom {
+    height: 300px;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul {
+    width: auto;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li {
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    margin-right: 31.49px;
+    float: left;
+    height: 285px;
+    width: 220px;
+    position: relative;
+    /* 动画 */
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li>a:hover img {
+    animation: shade ease 1.2s infinite;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li>a>span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fe5341;
+    color: #f5e8e8;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li img {
+    height: 130px;
+    width: 220px;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div {
+    text-align: center;
+    padding: 8px 8px 14px;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div h2 {
+    font-size: 16px;
+    height: 48px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div p:nth-of-type(1) {
+    padding: 6px 0;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div p:nth-of-type(1) span {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin: 0 5px;
+    color: #fe5341;
+    border: 1px solid #fe5341;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div .shenqing {
+    color: #333333;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div .shenqing>span {
+    color: #fe5341;
+    border: none;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li div .time {
+    color: #fe5341;
+    font-size: 14px;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li:nth-of-type(4) {
+    margin-right: 0px;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li:nth-of-type(2)>a>span {
+    background: #fbf4cb;
+    color: #c4baac;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li:nth-of-type(2) .green_border {
+    border: 1px solid #a1c269;
+}
+
+.content .hot_shiyong .hot_shiyong_bottom ul li:nth-of-type(2) .green {
+    color: #a1c269;
+}
