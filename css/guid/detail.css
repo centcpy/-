@@ -90,7 +90,6 @@ section {
 .like {
     width: 300px;
     height: 110px;
-    background-color: #fff;
 }
 
 .like ul {
@@ -101,4 +100,41 @@ section {
     border-radius: 10px;
     border: 1px solid #eaeaea;
     box-shadow: 0 1px 1px 1px #eee;
+    background-color: #fff;
+}
+
+.like ul li:first-child {
+    border-right: 1px solid #eaeaea;
+}
+
+.like ul li {
+    float: left;
+    width: 50%;
+    height: 108px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.like ul li a {
+    color: #aaa;
+    display: inline-block;
+    width: 150px;
+    height: 108px;
+    font-size: 14px;
+}
+
+.like ul li img {
+    margin-top: 30px;
+}
+
+.like ul li a:hover {
+    color: #fe5341;
+}
+
+.like ul .like_l a:hover img {
+    background-image: url(../../img/xinRedh.png);
+}
+
+.like ul .like_r a:hover img {
+    background-image: url(../../img/shareh_yj1.png);
 }
