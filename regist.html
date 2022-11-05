@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/regist.css">
 </head>
 
 <body>
@@ -26,7 +26,40 @@
             <a href="#" class="search fr">搜索</a>
         </div>
     </header>
+    <section class="report-box">
+        <div class="wrap">
+            <h2>注册极果</h2>
+            <form class="regForm">
+                <p>
+                    <input type="text" placeholder="请输入登录手机号">
+                </p>
+                <span class="ts"></span>
+                <p>
+                    <input type="text" placeholder="请输入图片校验码"><br>
+                    <img src="img/imgCode.jpg">
+                </p>
+                <span class="ts"></span>
+                <p>
+                    <input type="text" placeholder="请输入4位数字验证码">
+                    <a href="#" class="getCode">获取验证码</a>
+                </p>
+                <span class="ts"></span>
+                <p><input type="text" placeholder="请输入2-6位用户名">
 
+                </p>
+                <span class="ts"></span>
+                <p>
+                    <input type="password" placeholder="请输入6-12为英文数字组成的密码">
+                </p>
+                <span class="ts"></span>
+                <p>
+                    <input type="password" placeholder="确定新密码">
+                </p>
+                <span class="ts"></span>
+                <p><button id="submit">立即注册</button></p>
+            </form>
+        </div>
+    </section>
 
 
 
@@ -109,3 +142,5 @@
 </body>
 
 </html>
+<script src="../-/js/regist.js"></script>
+<script src="../-/js/mycookie.js"></script>

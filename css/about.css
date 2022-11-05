@@ -2,3 +2,84 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    position: relative;
+}
+
+section>article>div {
+    width: 300px;
+    height: 370px;
+    background-color: rgb(243, 243, 243);
+    padding: 25px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    float: left;
+    position: absolute;
+    top: 110px;
+    left: 300px;
+}
+
+section>article>div>h2 {
+    font-size: 20px;
+    color: #444;
+    border-bottom: 1px solid #666;
+    padding-left: 18px;
+    padding-bottom: 5px;
+}
+
+dl {
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+dl>dt {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+dd {
+    margin-left: 18px;
+}
+
+.center_right {
+    width: 680px;
+    border-radius: 8px;
+    background-color: rgb(243, 243, 243);
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    margin-left: 640px;
+}
+
+.center_right>h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.center_right>.about-info>h3 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.about-info>p {
+    line-height: 1.8;
+    color: #666;
+}
+
+h5 {
+    font-size: 20px;
+    padding: 18px 0 16px;
+    font-weight: bold;
+}

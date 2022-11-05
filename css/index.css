@@ -100,7 +100,408 @@ header {
     transform: scale(1.1);
 }
 
+/* 焦点图 */
+.focus {
+    height: 300px;
+    overflow: hidden;
+    background: url(../img/original.jpg) no-repeat center top;
+}
 
+.focus-box {
+    text-align: right;
+    width: 1000px;
+    min-width: 1000px;
+    margin: 40px auto;
+
+}
+
+.focus-box h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    font-family: "Microsoft YaHei", SimHei, "微软雅黑", "黑体";
+    font-weight: 400;
+    color: #555;
+}
+
+.focus-box span {
+    background: rgba(255, 255, 255, .3);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.time {
+    padding: 25px 0 16px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn a {
+    width: 242px;
+    height: 48px;
+    text-align: center;
+    display: inline-block;
+    line-height: 48px;
+    font-size: 24px;
+    border-radius: 3px;
+    background: #fe5341;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.wrap {
+    width: 1100px;
+    min-width: 1100px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap h2 {
+    color: #555;
+    margin-left: 50px;
+}
+
+.swiper {
+    height: 315px;
+    margin-top: 30px;
+}
+
+.swiper-box {
+    width: 210px;
+    height: 280px;
+    float: left;
+    margin-left: 50px;
+    border: 1px solid #cecfcf;
+    position: relative;
+}
+
+.shoufa {
+    background-color: #fe5341;
+    color: #fff;
+    position: absolute;
+    line-height: 22px;
+    z-index: 10;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+    top: 0;
+    right: 0;
+}
+
+.tiyanshi {
+    background-color: #fbf4cb;
+    color: #c4a96a;
+    position: absolute;
+    line-height: 22px;
+    z-index: 10;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.swiper-box img {
+    width: 210px;
+    height: 130px;
+}
+
+.swiper-slide h2 {
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: -54px;
+    right: auto;
+    --swiper-theme-color: rgb(227, 227, 227);
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: -40px;
+    --swiper-theme-color: rgb(227, 227, 227);
+
+}
+
+.tabs {
+    color: #fe5341;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.tabs span {
+    border: 1px solid #fe5341;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.sq {
+    font-size: 16px;
+    line-height: 28px;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sq span {
+    color: #fe5341;
+}
+
+.current {
+    font-size: 14px;
+    color: #fe5341;
+    text-align: center;
+}
+
+/* 报告精选 */
+.report {
+    /* height: 900px; */
+    overflow: hidden;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f7f7f7;
+}
+
+.report-box {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    position: relative;
+    padding: 18px 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.more {
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    padding-right: 17px;
+    font-size: 14px;
+    color: #fe5341;
+    background: url(../img/readMore.png) no-repeat right 5px;
+}
+
+/* 精选商品列表 */
+
+.report ul li {
+    width: 220px;
+    height: 231px;
+    line-height: 21px;
+    margin-left: 28px;
+    margin-bottom: 20px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.info {
+    padding: 7px 10px 10px;
+}
+
+.info .name {
+    color: #a3a3a3;
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.info .tip {
+    color: #a3a3a3;
+}
+
+.info .tip {
+    padding: 13px 0;
+}
+
+.info .nick {
+    font-size: 12px;
+}
+
+.info .icon {
+    float: right;
+
+}
+
+.icon span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 14px;
+    margin-left: 3px;
+}
+
+.icon .zan {
+    background: url(../img/zan.png) no-repeat left 4px;
+
+}
+
+.icon .look {
+    background: url(../img/reply.png) no-repeat left center;
+}
+
+/* 报道精选 */
+.baodao {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.baodao img {
+    width: 220px;
+    height: 130px;
+}
+
+.baodao li {
+    float: left;
+    width: 220px;
+    margin-left: 28px;
+    border-radius: 5px;
+    border: 1px solid #e5e3e3;
+}
+
+.fix {
+    background: url(../img/listbg.jpg) no-repeat bottom;
+}
+
+.tip-1 {
+    position: relative;
+
+}
+
+.icon-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.xin {
+    background: url(../img/xin.png) no-repeat left 4px;
+}
+
+/* 发现酷玩 */
+.found {
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.found img {
+    width: 220px;
+    height: 130px;
+}
+
+.found>.title {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.found ul {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.found li {
+    float: left;
+    margin-left: 28px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 1px solid #a3a3a3;
+}
+
+.found li .info>.name {
+    font-size: 14px;
+    height: 45px;
+    color: #555;
+}
+
+.found li .info>.name span {
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.found li .tip>.price {
+    color: #fe5341;
+}
+
+.playMore {
+    color: #a3a3a3;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.more-btn {
+    background: url(../img/more.png) no-repeat left center;
+    color: #fe5341;
+    padding-left: 24px;
+}
+
+/* 返回顶部 */
+.backTop {
+    z-index: 2;
+    position: fixed;
+    right: 120px;
+    top: 335px;
+    line-height: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: none;
+    background: url(../img/back.png) no-repeat #e8e8e8 center center;
+}
+
+/*动画  */
+.focus-box {
+    animation: rotateIn 1s ease both;
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: translateX(150px) translateY(-150px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+img:hover {
+    animation: yincang 2s infinite;
+}
+
+@keyframes yincang {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 

@@ -2,3 +2,202 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    height: 100%;
+    font-family: "Microsoft YaHei", SimHei, "微软雅黑", "黑体";
+    line-height: 1.6;
+    background: #fff;
+    font-size: 12px;
+    min-width: 1000px;
+    color: #333;
+}
+
+section>h1 {
+    text-align: center;
+    padding: 34px 0 30px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.play-nav a.on {
+    color: #fe5431;
+}
+
+.use-nav a.on {
+    color: #333;
+}
+
+.play-nav a.on {
+    border-bottom: 4px #fe5431 solid;
+    padding-bottom: 8px;
+}
+
+.play-nav a,
+.category li a,
+.use-nav a {
+    color: #a3a3a3;
+}
+
+.play-nav a {
+    display: inline-block;
+    padding-bottom: 12px;
+    width: 165px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.play-nav {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 0;
+}
+
+.use-nav {
+    font-size: 0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.wrap {
+    width: 1000px;
+    min-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+}
+
+.play-nav a,
+.category li a,
+.use-nav a {
+    color: #a3a3a3;
+}
+
+.use-nav a {
+    display: inline-block;
+    width: 165px;
+    font-size: 18px;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.use-box {
+    border-top: 1px solid #f0f0f0;
+}
+
+.report-box {
+    background: #f7f7f7;
+}
+
+img {
+    vertical-align: top;
+}
+
+.report-box>div>dl>dt>a {
+    position: relative;
+}
+
+.report-box>div>dl>dt>a>span {
+    display: block;
+    width: 40px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: rgb(248, 220, 220);
+    background-color: rgb(243, 42, 42);
+    border-radius: 0 0 0 6px;
+    position: absolute;
+    top: -2px;
+    left: 180px
+}
+
+dt {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 265px;
+    width: 220px;
+    border: 1px solid rgb(209, 208, 208);
+}
+
+h2 {
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+.report-box>div>dl>dt>a>.hot-con>.tabs>span {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sq>span {
+    color: red;
+    display: inline-block;
+}
+
+.sq {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.green {
+    color: green;
+}
+
+.graw {
+    color: rgb(111, 110, 110);
+}
+
+.red {
+    color: red;
+}
+
+.playMore {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background: url(../../img/more.png) no-repeat 420px 10px;
+}
+
+.playMore>a {
+    color: #fe5431;
+}
