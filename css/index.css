@@ -68,9 +68,21 @@ header {
     color: #ea6c23;
 }
 
-.head_r {
-    color: #ea6c23;
+.right {
+    float: right;
+    height: 30px;
+    line-height: 30px;
     margin-top: 20px;
+    margin-right: 50px;
+}
+
+.right a {
+    font-size: 16px;
+}
+
+.head_r {
+    float: right;
+    color: #ea6c23;
     margin-right: 50px;
     font-size: 16px;
     width: 50px;
@@ -87,10 +99,11 @@ header {
 }
 
 .search {
+    float: right;
     overflow: hidden;
     width: 40px;
     height: 40px;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-right: 25px;
     line-height: 666px;
     background: url(../img/search.png)no-repeat;
@@ -310,6 +323,8 @@ header {
 }
 
 .info {
+    width: 220px;
+    box-sizing: border-box;
     padding: 7px 10px 10px;
 }
 
@@ -372,11 +387,12 @@ header {
     width: 220px;
     margin-left: 28px;
     border-radius: 5px;
-    border: 1px solid #e5e3e3;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
 }
 
 .fix {
-    background: url(../img/listbg.jpg) no-repeat bottom;
+    background: url(../img/listbg.jpg)no-repeat 0px 72px;
 }
 
 .tip-1 {
@@ -422,7 +438,11 @@ header {
     margin-left: 28px;
     margin-top: 25px;
     border-radius: 5px;
-    border: 1px solid #a3a3a3;
+}
+
+.found .info {
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .found li .info>.name {
@@ -440,7 +460,7 @@ header {
     color: #fe5341;
 }
 
-.playMore {
+.load {
     color: #a3a3a3;
     text-align: center;
     font-size: 16px;

@@ -47,7 +47,9 @@ btn_.firstElementChild.onclick = function () {
     if (lable_.lastElementChild.innerHTML < 0 + '台') {
         alert('抢光了');
         lable_.lastElementChild.innerHTML = 0 + '台';
+        lable_.firstElementChild.innerHTML = 146 + '台';
     }
+
 }
 //返回顶部
 var backTop_ = document.querySelector('.backTop');
@@ -71,37 +73,53 @@ window.onscroll = function () {
     }
 }
 
-// ajax加载数据
-
-function getData() {
-    var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft');
-    ajax_.open('get', '../data.json');
-    ajax_.send();
-    ajax_.onreadystatechange = function () {
-        if (ajax_.readyState == 4) {
-            if (ajax_.staus == 200) {
-                console.log(ajax_.responseText);
-            } else {
-                console.log('加载错误');
-            }
+// cookie 与首页的交互
+window.onload = function () {
+    var head_r = document.getElementsByClassName('head_r');
+    var div_ = document.getElementsByClassName('right')[0];
+    var userName = localStorage.getItem('user');
+    var islogin = localStorage.getItem('islogin');
+    if (islogin) {
+        var str = `<a href="#"><span style="color: red;">欢迎${userName}!</span></a>`;
+        for (var i = 0; i < head_r.length; i++) {
+            head_r[i].style.display = 'none';
         }
+        div_.innerHTML = str;
+        div_.className = 'right';
     }
 }
-//商品加载
-window.onload = function () {
-    setTimeout(getData, 1500)
-}
+// ajax加载数据
+
+// function getData() {
+//     var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft');
+//     ajax_.open('get', '../data.json');
+//     ajax_.send();
+//     ajax_.onreadystatechange = function () {
+//         if (ajax_.readyState == 4) {
+//             if (ajax_.staus == 200) {
+//                 console.log(ajax_.responseText);
+//             } else {
+//                 console.log('加载错误');
+//             }
+//         }
+//     }
+// }
+// //商品加载
+// window.onload = function () {
+//     setTimeout(getData, 1500)
+// }
 // var dataList = [];
-function getData() {
+var more_btn = document.getElementsByClassName('more-btn')[0];
+more_btn.onclick = function () {
     var ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
     ajax_.open('get', 'http://127.0.0.1:3000/play/new');
     ajax_.send();
     ajax_.onreadystatechange = function () {
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
-                var data = ajax_.responseText;
-                data = JSON.parse(data);
-                console.log(data);
+                var data = JSON.parse(ajax_.responseText);
+                show(data);
+                // console.log(data);
             } else {
                 console.log('加载失败');
             }
@@ -111,13 +129,14 @@ function getData() {
 var index = -1;
 // var body = document.getElementsByTagName('body')[0];
 var flg = true;
-var more_btn = document.querySelector('.more-btn');
-more_btn.onclick = function (data) {
-    console.log(data);
+function show(data) {
+    // console.log(data);
     if (flg) {
         index++;
-        more_btn.style.backgroundImage = 'url(../-/img/loading-icon.gif)';
-        more_btn.innerHTML = '正在加载中';
+        if (index >= data.length - 1) {
+            more_btn.innerHTML = '数据加载完毕!';
+            flg = false;
+        }
         var found_kuwan = document.querySelector('.found-kuwan');
         for (var item of data[index]) {
             var li_ = document.createElement('li');

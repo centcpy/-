@@ -82,7 +82,7 @@ submit_.onclick = function () {
         setCookie('password', input_[4].value);
         var newDate = new Date();
         newDate.setDate(newDate.getDate() + 2)
-        window.location.href = "../login.html";
+        window.location.href = "http://127.0.0.1:5500/%E6%9E%81%E6%9E%9C%E7%BD%91%E7%AB%99/login.html";
     } else {
         alert('注册失败，请重新检查是否正确');
 

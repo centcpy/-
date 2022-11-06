@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>导购最热</title>
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/guid/hot.css">
 </head>
 
@@ -23,9 +22,11 @@
                 <li><a href="../use/index.html">试用</a></li>
                 <li><a href="../report/index.html">报告</a></li>
             </ul>
-            <a href="../regist.html" class="head_r fr">注册</a>
-            <a href="../login.html" class="head_r fr">登录</a>
-            <a href="#" class="search fr">搜索</a>
+            <div class="right">
+                <a href="./regist.html" class="head_r fr">注册</a>
+                <a href="./login.html" class="head_r fr">登录</a>
+                <a href="#" class="search fr">搜索</a>
+            </div>
         </div>
     </header>
     <!-- 导购标题 -->
@@ -39,7 +40,7 @@
     <!-- 导购内容 -->
     <section>
         <div class="content">
-            <ul class="myDiv">
+            <ul id="myDiv">
                 <li>
                     <a href="./detail.html">
                         <img src="../img/g4.jpg" alt="">
@@ -266,7 +267,7 @@
                 </li>
             </ul>
             <div class="load">
-                <a href="" class="more">点击加载更多</a>
+                <a href="javascript:void(0)" class="more">点击加载更多</a>
             </div>
         </div>
     </section>
@@ -352,3 +353,4 @@
 </body>
 
 </html>
+<script src="../js/guid/hot.js"></script>

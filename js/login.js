@@ -30,9 +30,10 @@ submit_.onclick = function () {
     getCookie('password');
     if (input_[0].value == getCookie('iphone') && input_[2].value == getCookie('password')) {
         alert('登录成功');
-        setCookie('iphone', input_[0].value);
-        setCookie('password', input_[2].value);
-        window.location.href = '../index.html';
+        localStorage.setItem('user', input_[0].value);
+        localStorage.setItem('pass', input_[2].value);
+        localStorage.setItem('islogin', true);
+        window.location.href = 'http://127.0.0.1:5500/%E6%9E%81%E6%9E%9C%E7%BD%91%E7%AB%99/index.html';
     } else {
         alert('账号或密码不存在');
     }
